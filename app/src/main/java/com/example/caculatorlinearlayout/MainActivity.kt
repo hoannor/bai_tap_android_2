@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<Button>(R.id.btn7).setOnClickListener(this)
         findViewById<Button>(R.id.btn8).setOnClickListener(this)
         findViewById<Button>(R.id.btn9).setOnClickListener(this)
+        findViewById<Button>(R.id.btnC).setOnClickListener(this)
+        findViewById<Button>(R.id.btnCE).setOnClickListener(this)
         findViewById<Button>(R.id.btnAdd).setOnClickListener(this)
         findViewById<Button>(R.id.btnEqual).setOnClickListener(this)
         findViewById<Button>(R.id.btnTime).setOnClickListener(this)
@@ -98,6 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             op1 = 0
             op2 = 0
             op = 0
+            textReuslt.text = "$op"
         } else if (id == R.id.btnCE) {
             if (state == 1) {
                 op1 = 0
